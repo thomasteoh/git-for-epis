@@ -4,6 +4,7 @@ on: [push]
 jobs:
   build-presentation-on-container:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     container:
       image: pandoc/latex
     steps:
