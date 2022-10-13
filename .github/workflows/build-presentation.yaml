@@ -1,0 +1,19 @@
+name: Build beamer presentation
+run-name: ${{ github.actor }} is building the presentation
+on: [push]
+jobs:
+  build-presentation-on-container:
+    runs-on: ubuntu-latest
+    container:
+      image: pandoc/latex
+      entrypoint: ["/bin/sh", "-c"]
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: List files in the repository
+        run: |
+          mkdir output
+          pandoc --output=output/preso.pdf README.md
+    artifacts:
+      paths:
+        - output
