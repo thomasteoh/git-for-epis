@@ -4,6 +4,7 @@ on: [push]
 jobs:
   build-presentation-on-container:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     container:
       image: pandoc/latex
     steps:
@@ -12,7 +13,7 @@ jobs:
       - name: List files in the repository
         run: |
           mkdir output
-          pandoc -s --dpi=300 --slide-level 2 --toc --listings --shift-heading-level=0 --columns=50 --pdf-engine lualatex -V classoption:aspectratio=169 -V lang=en-AU -t beamer README.md -o output/preso.pdf
+          pandoc -s --dpi=300 --slide-level 2 --toc --listings --shift-heading-level=0 --columns=50 --pdf-engine lualatex -V classoption:aspectratio=169 -V lang=en-AU -t beamer notes.md -o output/preso.pdf
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
