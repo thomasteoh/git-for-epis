@@ -70,6 +70,44 @@ git clone <repository>
 
 # Committing changes to the repository
 
+Committing your changes is a manual process that involves identifying that you have made a change (or partial change!) and describing the work that you've done.
+
+This is typically done in a few steps
+
+
+## Identify changed files
+
+You can also see through this process what within each file has changed, if they are a plain text file
+
+```
+git status
+git log
+```
+
+A condensed version can be seen using the following
+
+```
+git log --pretty=oneline
+```
+
+## Stage your changes
+
+Add the files that you have changed so that they are ready for you to capture in your commit. 
+
+```
+git add <filename>
+```
+
+If you would like to stage all changes you can use the following command
+
+```
+git add --all
+```
+
+## Commit your changes
+
+When you have finished staging 
+
 # Using branches to encapsulate your work
 
 # Common things to look out for
