@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: pandoc/latex
-      entrypoint: ["/bin/sh", "-c"]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
