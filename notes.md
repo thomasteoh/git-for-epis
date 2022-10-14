@@ -1,6 +1,6 @@
 # Introduction
 
-`git` is a tool to do version control
+`git` is a free tool to do version control
 
 Version control allows us to save checkpoints of our files and to back them up 
 on the `git` repository provider.
