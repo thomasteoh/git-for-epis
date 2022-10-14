@@ -20,7 +20,7 @@ Used very commonly in software development circles but doesn't mean we can't use
 - Notes
 - Configurations
 
-Facilitates collaboration by centralising and organising codebase
+Facilitates collaboration by centralising and organising codebases
 
 Provides mechanisms for working concurrently, resolving conflicts, identifying 
 changes and reverting problematic code
