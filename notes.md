@@ -1,6 +1,6 @@
 # Introduction
 
-`git` is a tool to do version control
+`git` is a free tool to do version control
 
 Version control allows us to save checkpoints of our files and to back them up 
 on the `git` repository provider.
@@ -20,7 +20,7 @@ Used very commonly in software development circles but doesn't mean we can't use
 - Notes
 - Configurations
 
-Facilitates collaboration by centralising and organising codebase
+Facilitates collaboration by centralising and organising codebases
 
 Provides mechanisms for working concurrently, resolving conflicts, identifying 
 changes and reverting problematic code
